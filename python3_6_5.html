@@ -33295,22 +33295,7 @@ AElFTkSuQmCC
 
 </div>
 </div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>hash ends with ..100 </li>
-<li>=&gt; this is a binary <strong>5</strong></li>
-<li>=&gt; look in hashtable list at <strong>5th position</strong> </li>
-<li>=&gt; find <strong>'ssh' key and 22 value</strong></li>
-</ul>
-
-</div>
-</div>
-</div></div></section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -33323,15 +33308,6 @@ AElFTkSuQmCC
  [..101, 'ssh', 22],
 ]
 indices = [None, 1, None, None, 0, 2, None, None]</code></pre>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>hash ends with ..100 </li>
 <li>=&gt; this is a binary <strong>5</strong></li>
@@ -33343,7 +33319,7 @@ indices = [None, 1, None, None, 0, 2, None, None]</code></pre>
 
 </div>
 </div>
-</div></div></section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -37437,7 +37413,19 @@ iQAAAABJRU5ErkJggg==
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>have indexes and are compact</li>
+<li>have indexes</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>are ordered (not garanteed!)</li>
 </ul>
 
 </div>
@@ -37495,6 +37483,18 @@ iQAAAABJRU5ErkJggg==
 </div>
 </div>
 </div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>who here has written a meta class? (Brett Cannon)</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -37600,22 +37600,10 @@ Do something in the Subclass
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="It-was-not-easy-to-change-the-DNA-of-a-subclass">It was not easy to change the DNA of a subclass<a class="anchor-link" href="#It-was-not-easy-to-change-the-DNA-of-a-subclass">&#182;</a></h3>
+<h3 id="Only-meta-programming-could-fix-that">Only meta programming could fix that<a class="anchor-link" href="#Only-meta-programming-could-fix-that">&#182;</a></h3>
 </div>
 </div>
 </div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>Only meta programming could fix that</li>
-</ul>
-
-</div>
-</div>
-</div></div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -37634,7 +37622,7 @@ Do something in the Subclass
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>you can only inherit from one metaclass</li>
+<li>"Who here has written a meta class? Who here found it really simple?" (Brett Cannon)</li>
 </ul>
 
 </div>
@@ -37655,7 +37643,7 @@ Do something in the Subclass
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
-<li>there is a new hook <strong>subclass_init</strong> that is invoked automatically</li>
+<li>the subclass init is invoked automatically</li>
 </ul>
 
 </div>
@@ -37675,13 +37663,14 @@ Do something in the Subclass
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Superclass</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
     <span class="k">def</span> <span class="nf">__init_subclass__</span><span class="p">(</span><span class="n">cls</span><span class="p">,</span> <span class="n">whom</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;Do something with </span><span class="si">{whom}</span><span class="s1">&#39;</span><span class="p">)</span>
         <span class="n">cls</span><span class="o">.</span><span class="n">hello</span> <span class="o">=</span> <span class="k">lambda</span><span class="p">:</span> <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s2">&quot;Hello from </span><span class="si">{whom}</span><span class="s2">!&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">cls</span><span class="o">.</span><span class="n">__dict__</span><span class="p">)</span>
 
 <span class="k">class</span> <span class="nc">MySubclass</span><span class="p">(</span><span class="n">Superclass</span><span class="p">,</span> <span class="n">whom</span><span class="o">=</span><span class="s2">&quot;MySubclass&quot;</span><span class="p">):</span>
     <span class="k">pass</span>  
@@ -37700,6 +37689,7 @@ Do something in the Subclass
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Do something with MySubclass
+{&#39;__module__&#39;: &#39;__main__&#39;, &#39;__doc__&#39;: None, &#39;hello&#39;: &lt;function Superclass.__init_subclass__.&lt;locals&gt;.&lt;lambda&gt; at 0x104931b70&gt;}
 Hello from MySubclass!
 </pre>
 </div>
@@ -37725,6 +37715,18 @@ Hello from MySubclass!
 <div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>"With meta-Programming you are changing the DNA of a whole class hierarchy"</li>
+</ul>
+
+</div>
+</div>
+</div></div><div class="fragment">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>"you can capture things about a class before it ever gets created"</li>
 </ul>
 
 </div>
@@ -38040,181 +38042,7 @@ Hello from MySubclass!
 </div>
 </div>
 
-</div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>you can also use it with key word arguments</li>
-</ul>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">Stock</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;MICROSOFT&#39;</span><span class="p">,</span> <span class="n">price</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">shares</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">shares</span><span class="p">,</span> <span class="n">s</span><span class="o">.</span><span class="n">price</span><span class="p">)</span>   
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>MICROSOFT 20 100
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></div></section><section>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">-</span> <span class="n">it</span> <span class="n">checks</span> <span class="k">for</span> <span class="n">errors</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-cyan-fg">  File </span><span class="ansi-green-fg">&#34;&lt;ipython-input-48-0d8912a8827a&gt;&#34;</span><span class="ansi-cyan-fg">, line </span><span class="ansi-green-fg">1</span>
-<span class="ansi-red-fg">    - it checks for errors</span>
-              ^
-<span class="ansi-red-fg">SyntaxError</span><span class="ansi-red-fg">:</span> invalid syntax
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">Stock</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;GOOG&#39;</span><span class="p">,</span> <span class="n">shares</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area"><div class="prompt"></div>
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-44-927d8ffd8448&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>s <span class="ansi-blue-fg">=</span> Stock<span class="ansi-blue-fg">(</span>name<span class="ansi-blue-fg">=</span><span class="ansi-blue-fg">&#39;GOOG&#39;</span><span class="ansi-blue-fg">,</span> shares<span class="ansi-blue-fg">=</span><span class="ansi-cyan-fg">100</span><span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">&lt;ipython-input-35-84e5a0e7dd54&gt;</span> in <span class="ansi-cyan-fg">__init__</span><span class="ansi-blue-fg">(self, *args, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">      5</span> 
-<span class="ansi-green-intense-fg ansi-bold">      6</span>     <span class="ansi-green-fg">def</span> __init__<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-fg">----&gt; 7</span><span class="ansi-red-fg">         </span>bound <span class="ansi-blue-fg">=</span> self<span class="ansi-blue-fg">.</span>__signature__<span class="ansi-blue-fg">.</span>bind<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">      8</span>         <span class="ansi-green-fg">for</span> name<span class="ansi-blue-fg">,</span> val <span class="ansi-green-fg">in</span> bound<span class="ansi-blue-fg">.</span>arguments<span class="ansi-blue-fg">.</span>items<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-<span class="ansi-green-intense-fg ansi-bold">      9</span>             setattr<span class="ansi-blue-fg">(</span>self<span class="ansi-blue-fg">,</span> name<span class="ansi-blue-fg">,</span> val<span class="ansi-blue-fg">)</span>
-
-<span class="ansi-green-fg">/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/inspect.py</span> in <span class="ansi-cyan-fg">bind</span><span class="ansi-blue-fg">(*args, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2932</span>         <span class="ansi-green-fg">if</span> the passed arguments can <span class="ansi-green-fg">not</span> be bound<span class="ansi-blue-fg">.</span>
-<span class="ansi-green-intense-fg ansi-bold">   2933</span>         &#34;&#34;&#34;
-<span class="ansi-green-fg">-&gt; 2934</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">return</span> args<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">0</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">.</span>_bind<span class="ansi-blue-fg">(</span>args<span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">:</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> kwargs<span class="ansi-blue-fg">)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2935</span> 
-<span class="ansi-green-intense-fg ansi-bold">   2936</span>     <span class="ansi-green-fg">def</span> bind_partial<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">*</span>args<span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">**</span>kwargs<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-green-fg">/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/inspect.py</span> in <span class="ansi-cyan-fg">_bind</span><span class="ansi-blue-fg">(self, args, kwargs, partial)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2903</span>                                                     param.default is _empty):
-<span class="ansi-green-intense-fg ansi-bold">   2904</span>                     raise TypeError(&#39;missing a required argument: {arg!r}&#39;. \
-<span class="ansi-green-fg">-&gt; 2905</span><span class="ansi-red-fg">                                     format(arg=param_name)) from None
-</span><span class="ansi-green-intense-fg ansi-bold">   2906</span> 
-<span class="ansi-green-intense-fg ansi-bold">   2907</span>             <span class="ansi-green-fg">else</span><span class="ansi-blue-fg">:</span>
-
-<span class="ansi-red-fg">TypeError</span>: missing a required argument: &#39;price&#39;</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></div></section><section>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>The tutorial is a lot longer and has a lot more magic with descriptors</p>
-
-</div>
-</div>
-</div><div class="fragment">
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li>The same PEP has an additional hook for descriptors: <strong>set_name</strong></li>
-</ul>
-
-</div>
-</div>
-</div></div><div class="fragment">
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">Trait</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">minimum</span><span class="p">,</span> <span class="n">maximum</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">minimum</span> <span class="o">=</span> <span class="n">minimum</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">maximum</span> <span class="o">=</span> <span class="n">maximum</span>
-
-    <span class="k">def</span> <span class="nf">__get__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">instance</span><span class="p">,</span> <span class="n">owner</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">instance</span><span class="o">.</span><span class="n">__dict__</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">key</span><span class="p">]</span>
-
-    <span class="k">def</span> <span class="nf">__set__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">instance</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">minimum</span> <span class="o">&lt;</span> <span class="n">value</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">maximum</span><span class="p">:</span>
-            <span class="n">instance</span><span class="o">.</span><span class="n">__dict__</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;value not in range&quot;</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">__set_name__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">owner</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">key</span> <span class="o">=</span> <span class="n">name</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div></div></section></section><section><section>
+</div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
