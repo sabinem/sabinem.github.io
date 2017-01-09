@@ -1,8 +1,7 @@
-# Präsentations with Python Notebooks and reveal.js
+# Presenttion with Jupyter notebook and reveal.js
 
 ## start notebooks 
 with `jupyter notebook`
-
 
 ## convert notebook into slideshow
 with `jupyter nbconvert python3.6.ipynb --to slides`
