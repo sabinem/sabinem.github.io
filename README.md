@@ -1,5 +1,5 @@
 # My Presentations
-They are hosted on [sabinem.github.io](https://sabinem.github.io)
+They are hosted on [sabinem.github.io](https://sabinem.github.io/index.html)
 
 ## reveal.js.
 The presentations in this repo make use of reveal.js, a library that 
