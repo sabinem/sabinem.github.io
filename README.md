@@ -1,13 +1,13 @@
-# Präsentations with Python Notebooks and reveal.js
+# My Presentations
+They are hosted on [sabinem.github.io](https://sabinem.github.io)
 
-## start notebooks 
-with `jupyter notebook`
+## reveal.js.
+The presentations in this repo make use of reveal.js, a library that 
+is not available via a CDN-Service
 
+## Jupyter notebook
+Some of these presentations are generated from jupyter notebooks
 
-## convert notebook into slideshow
-with `jupyter nbconvert python3.6.ipynb --to slides`
-
-
-## structure of the repo
-- `images` has images necessary for the slideshow
+- start notebooks with with `jupyter notebook`
+- convert notebook into slideshow with `jupyter nbconvert <file.ipynb> --to slides`
 
