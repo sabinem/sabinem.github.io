@@ -768,7 +768,7 @@ input[type="text"]:focus {
 }
 
 ul {
-    list-style: circle inside;
+    list-style: none;
     padding-left: 0;
     margin-top: 0;
 }

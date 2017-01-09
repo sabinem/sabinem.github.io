@@ -33,3 +33,7 @@
     text-align: center;
     width: 100%;
 }
+
+a h3 {
+    margin-bottom: 0.2em;
+}
