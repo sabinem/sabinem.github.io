@@ -1,0 +1,35 @@
+.header_wrapper {
+    position: relative;
+    bottom:10px;
+    height:80px;
+}
+
+.logo {
+    display: block;
+    fill: #384033;
+    height:80px;
+}
+
+.logo__name {
+    left:140px;
+    line-height: 1em;
+}
+
+.logo__text {
+    font-weight: normal;
+}
+
+.logo--middle {
+    fill: #406b44;
+}
+
+.footer {
+    background-color: #384033;
+    box-shadow: 0 0 100px 50px #CAE5D2;
+    color: #fff;
+    padding: 20px 0 20px 0;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
