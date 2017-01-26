@@ -398,6 +398,7 @@
             <li><em class="cs_example">posted_by </em>was added</li>
         </ul>        
     </div>
+
          <div class="step slide" data-rel-x="1000" data-rel-y="0">
         <h3>Live Demo on a virtual machine</h3>
         <img style="height:auto; width:800px;" src="images/copied/vm_ubuntu.png"  />
@@ -407,7 +408,30 @@
             <li>ccm (Cassandra Cluster manager)</li>
         </ul>    
     </div>
-     
+      <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h3>Toms viewpoint</h3>
+    
+        <div class="mermaid">
+            %% Example diagram            
+            graph LR
+                a(Mary) --> b(Tom)
+                c(Susan) --> b
+                d(John) --> b
+                b --> d
+                b --> e(Angelina)
+                b --> f(Sally)  
+                style b fill:orange,stroke-width:1px;
+                class d fill:bluegreen,stroke-width:1px;
+                classDef follow fill:lightblue,stroke-width:1px;
+                classDef following fill:lightgreen,stroke-width:1px;
+                    class a,c follow
+                    class e,f following
+        </div>       
+          <ul>
+              <li>When <em class="cs_example">Tom tweets</em>: Marys and Susans and Johns timelines must be updated in addition to his!</li>
+        </ul>             
+          
+    </div>  
     
     <div class="step slide">
         <h3>Useful Links and some companies, that use Cassandra</h3>
@@ -418,17 +442,7 @@
         </ul>    
         <img style="width:500px;" src="images/copied/cassandra_users.png"  />
     </div>   
-        
-    <div class="step slide" data-rel-x="1000" data-rel-y="0">
-        <img src="images/copied/customers.png"  
-                     class="right" style="width:300px;"/>
-                <ul>
-        <li><a href="https://www.tutorialspoint.com/cassandra">Tutorialspoint</a></li> 
-        <li><a href="https://github.com/pcmanus/ccm">CCM (Cassandra Cluster Manager)</a></li> 
-        <li><a href="http://cassandra.apache.org/">Apache Cassandra</a></li>     
-        </ul> 
-    </div>         
-      
+
 
 <div id="impress-toolbar"></div>
 
