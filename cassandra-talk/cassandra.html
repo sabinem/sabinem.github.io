@@ -1,0 +1,464 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Cassandra| by Sabine Maennel </title>
+    
+    <meta name="description" content="Simple example impress.js slide show" />
+    <meta name="author" content="Henrik Ingo" />
+
+    <link rel="stylesheet" href="extras/highlight/styles/default.css">
+    <link rel="stylesheet" href="extras/mermaid/mermaid.forest.css">
+
+    <link href="css/classic-slides.css" rel="stylesheet" />
+    <link href="css/cassandra.css" rel="stylesheet" />
+    
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress" data-transition-duration="1000">
+
+    <div class="step slide" data-x="-1000" data-y="-1500">
+        <img src="images/copied/logo.png" alt="Apache Cassandra Logo" class="center"/>  
+        <h1>Apache Cassandra</h1>
+        <h3>An <em class="cs_warning">eventually consistent</em> database,<br>that <em class="cs_highlight">scales with ease</em></h3>
+         
+        <p>by Sabine Maennel<br>at pydata Zürich 25.1.2017</p>
+        
+    </div>
+    
+    
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h1>Overview</h1>
+
+        <ul>
+            <li><em class="cs_highlight">Understanding</em> Cassandra</li>
+            <li>Cassandra in Action: <em class="cs_example">Twissandra</em></li>
+        </ul>
+
+    </div>
+    
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <blockqoute>"The problem is that Cassandra’s data model is <em class="cs_highlight">different enough</em> from that of a traditional database to readily cause <em class="cs_warning">confusion"</em></blockquote>
+        
+                <p>from <a href="https://blog.rackspace.com/cassandra-by-example">Cassandra by example, rackspace.com</a></p>    
+        <ul>
+            <li>"map of maps"</li>
+            <li>"a map of maps of maps"</li>
+            <li>"containers that hold collections of column objects"</li>
+            <li>"columns ... as 3-tuples"</li>
+
+        
+        </ul>
+        </div>     
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h3><br/>Some characteristics</h3>
+        <ul>
+            <li>A <em class="cs_warning">NoSQL</em> database</li>
+            <li>for big <em class="cs_highlight">distributed</em> data</li>
+            <li><em class="cs_warning">no single point of failure</em></li>
+            <li><em class="cs_highlight">quick</em> response times</li>
+            <li>runs on <em class="cs_highlight">cheap</em> hardware spread to datacenters around the globe</li>
+        </ul>
+
+    </div>
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h3>History</h3>
+        <ol>
+            <li>Facebook invented Cassandra</li>
+            <li>Influenced by Google and Amazon</li>
+            <li>Today its driven by Apache as an Open Source Project</li>
+        </ol> 
+        <img style="width:600px, height:auto" src="images/copied/asf_logo.png" alt="Apache logo"/> 
+    </div>  
+ 
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h1>How I met Cassandra</h1>
+        <img src="images/copied/obstacle.png"  
+                     class="right"/>
+        <ul>
+        <li>exercise of analysing <em class="cs_warning">logfiles</em></li>
+        <li>
+            on second thought, it was a <em class="cs_highlight">solution for scaling</em></li> </ul>   
+    </div>      
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h3>coming from an RDBMS background ...</h3>
+        <ul>
+            <li>the <em class="cs_highlight">terminology</em> is mostly the same</li>
+        </ul>
+            <table class="compare-table">              
+            <tr>
+                <th></th>  
+                <th>RDBMS</th>
+                <th>Cassandra</th>
+            </tr>
+            <tr>
+                <td>Query-Language</td>
+                <td>SQL</em></td>
+                <td><em class="cs_warning">CQL</em></td>
+            </tr>
+            <tr>
+                <td>Container</td>
+                <td>Database</em></td>
+                <td><em class="cs_warning">Keyspace</em></td>
+            </tr>
+            <tr>
+                <td>Table</td>
+                <td><em class="cs_highlight">Table</em></td>
+                <td><em class="cs_highlight">Table</em></td>
+            </tr>                
+            <tr>
+                <td>Fields</td>
+                <td><em class="cs_highlight">Column</em></td>
+                <td><em class="cs_highlight">Column</em></td>
+            </tr>      
+            <tr>
+                <td>Primary Key</td>
+                <td><em class="cs_highlight">Primary Key</em></td>
+                <td><em class="cs_highlight">Primary Key</em></td>
+            </tr>  
+            <tr>
+                <td>Operations</td>
+                <td><em class="cs_highlight">SELECT, CRUD</em></td>
+                <td><em class="cs_highlight">SELECT, CRUD</em></td>
+            </tr>            
+        </table>
+
+    </div>     
+
+
+      
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h3>But Casssandra is different ...</h3>
+        <p>Cassandra is a mulitlevel-<em class="cs_warning">map</em> rather then a <em class="cs_highlight">structure</em></p>
+        <ul>
+            <li><em class="cs_highlight">rows</em> are a <em class="cs_warning">map!</em></li>
+            <li><em class="cs_highlight"> columns</em> are a <em class="cs_warning">map!</em></li>
+            <li>instead of <em class="cs_highlight">transactions</em> Cassandra's reads and writes are more like a <em class="cs_warning">multistep</em> operations of <em class="cs_warning">copying</em> and <em class="cs_warning">retrieving</em> data</li>
+        </ul>
+    </div>   
+
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h3>How to think of Cassandra</h3>
+        <ol>
+            <li><em class="cs_highlight">Cassandra is mostly hosted on servers</em>, that form rings: <em class="cs_warning">"clusters"</em></li>
+            <li>there is <em class="cs_highlight">no manager</em> node</li>
+            <li>they talk via a <em class="cs_highlight">Gossip</em>-Protocol</li>
+        </ol> 
+        <img style="height:300px; width:500px;" src="images/affinity/cassandra_rings.png" alt="Cassandra cluster"/>
+        <p class="left"></p> 
+    </div> 
+      <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h3>A table is <em class="cs_highlight">distributed</em></h3>
+        <ol>
+            <li><em class="cs_warning">Partitions</em> of the table are <em class="cs_highlight">mapped</em> to different serves in the ring</li>
+            <li>the mapping is done by a <em class="cs_highlight">hashing</em> algorithm</li>
+            <li>there are <em class="cs_highlight">replications</em> of each row -> <em class="cs_warning">replication-factor</em></li>
+        </ol> 
+        <img style="height:300px; width:500px;" src="images/affinity/cassandra_table.png" alt="Cassandra table"/>
+        <p class="left"></p> 
+    </div> 
+      <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h3>Why <em class="cs_highlight">replications</em> of data?</h3>
+        <img style="height:300px; width:500px;" src="images/affinity/cap.png"/>
+        <p class="left"></p>           
+        <ul>
+            <li><em class="cs_highlight">Availability</em>: quick responses <li><em class="cs_highlight">Partition tolerance</em>: works even when some servers are down</li>
+            <li><em class="cs_warning">Conistency</em>: all stored data are up to date</li>
+        </ul> 
+
+    </div> 
+      <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h3>Now we understand why a table is <em class="cs_highlight">distributed</em></h3>
+        <ul>
+            <li><em class="cs_highlight">Partition tolerance</em>
+        </ul>   
+        <img style="height:300px; width:500px;" src="images/affinity/partiton_tolerance.png" alt="Apache Cassandra Logo"/>
+    
+    </div>   
+      <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h3>Imagine a query in this <em class="cs_highlight">distributed</em> system</h3>
+        <ol>
+            <li><em class="cs_warning">it does not work!</em></li>
+            <li><em class="cs_highlight">but, </em>some rows are closer then others ...</li>
+        </ol> 
+        <img style="height:300px; width:500px;" src="images/affinity/cassandra_query.png" alt="Apache Cassandra Logo"/>
+        <p class="left"></p> 
+    </div>
+
+    
+
+      <div class="step slide" data-rel-x="1000" data-rel-y="0">
+          <h3><em class="cs_warning">partitions</em> are <em class="cs_highlight">cluster </em> of rows</h3>
+          <p>the <em class="cs_highlight">primary</em> key has two parts:</p>
+        <ul>
+            <li>partions are determined by the <em class="cs_warning">partition key</em></li>
+            <li>rows in a partion are sorted by the <em class="cs_highlight">clustering key</em>, which may be queried<em class="cs_highlight"> by range</em></li>
+        </ul> 
+        <img style="height:300px; width:500px;" src="images/affinity/cassandra_clustering_query.png" alt="Apache Cassandra Logo"/>
+        <p class="left"></p> 
+    </div>
+      <div class="step slide" data-rel-x="1000" data-rel-y="0">
+          <h3><em class="cs_highlight">rows</em> contain <em class="cs_highlight">maps </em>rather than columns </h3>
+        <ul>
+            <li>tables are also called <em class="cs_warning">column familys</em></li>
+            <li>they consist of <em class="cs_warning">key-value pairs</em></li>
+            <li>in an RDBMS these would be <em class="cs_highlight">sparse tables</em></li>
+        </ul> 
+        <img style="height:300px; width:auto;" src="images/affinity/cassandra_rows.png" alt="columns in cassandra"/>
+        <p class="left"></p> 
+    </div>
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h1>Columns are <em class="cs_highlight">maps </em></h1>
+        <ol>
+            <li>they consist of <em class="cs_warning">key-value pairs</em></li>
+            <li>they come with a <em class="cs_warning">timestamp</em> </li>
+            <li>they may even <em class="cs_highlight">expire</em></li>
+        </ol> 
+        <img style="height:200px; width:auto;" src="images/affinity/column.png" alt="Cassandra column"/>
+        <p class="left"></p> 
+    </div> 
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h3>remember ...</h3>
+        <ul>
+            <li>"map of maps"</li>
+            <li><em class="cs_highlight">"map of maps of maps"</em></li>
+            <li>"containers that hold collections of column objects"</li>
+            <li>"columns ... as <em class="cs_highlight">3-tuples</em>"</li>
+        </ul>
+        </div>
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h3>What does<em class="cs_warning"> eventually consistent</em> mean?</h3>
+        <p>-> look at how Cassandra <em class="cs_highlight">reads</em> and  <em class="cs_highlight">writes</em></p>
+        <img style="height:300px; width:auto;" src="images/affinity/cassandra_update.png" alt="Cassandra update"/>
+        <ul>
+            <li><em class="cs_warning">write consistency:</em> how many writes must be okay for <em class="cs_highlight">write success</em>?</li>
+        </ul>          
+        </div>
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h3>Cassandra is <em class="cs_highlight"> consistent</em> if ...</h3>
+        <ul>
+            <li>write consistency + read consistency<em   class="cs_warning"> > replication factor</em></li>
+        </ul>        
+        <img style="height:400px; width:auto;" src="images/affinity/cassandra_consistency.png" alt="Cassandra update"/>
+
+        </div>
+
+      <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h3>Lets look at an example <em class="cs_example">Twissandra</em></h3>  
+        <li><a href="https://github.com/eevans/twissandra-j">Twissandra (Java)</a></li> 
+        <code>>cassandra</code> to start cassandra<br>
+        <code>>cqlsh</code> in a different terminal to start CQL<br> 
+        <pre><code class="sql">
+        cqlsh> CREATE KEYSPACE IF NOT EXISTS twissandra 
+               WITH REPLICATION = {'class': 'SimpleStrategy', 'replication_factor': 1};
+        </code></pre> 
+        <pre><code class="sql">
+        cqlsh> DESCRIBE twissandra;
+        CREATE KEYSPACE twissandra WITH replication = {'class': 'SimpleStrategy', 'replication_factor': '1'}  AND durable_writes = true;
+        </code></pre>          
+    </div>
+
+      <div class="step slide" data-rel-x="1000" data-rel-y="0">
+          <p>Now we have to <em class="cs_highlight">use</em> that keyspace</p>   
+        <pre><code class="sql">
+        cqlsh> USE twissandra; 
+        </code></pre> 
+        
+          <p>We are ready to <em class="cs_highlight">create the first table</em>:</p>
+        <pre><code class="sql">
+        
+        cqlsh> CREATE TABLE users (
+               username text PRIMARY KEY,
+               password text);
+        </code></pre>   
+        <ul>
+            <li>the <em class="cs_warning">partion key</em> is <em class="cs_example">username</em></li>
+        </ul>          
+    </div>
+
+      <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h3>Look at your <em class="cs_example">table</em></h3>          
+        <pre><code>
+        cqlsh> DESCRIBE users; 
+        CREATE TABLE twissandra.users (
+            username text PRIMARY KEY,
+            password text
+        ) WITH bloom_filter_fp_chance = 0.01
+            AND caching = {'keys': 'ALL', 'rows_per_partition': 'NONE'}
+            AND comment = ''
+            AND compaction = {'class': 'org.apache.cassandra.db.compaction.SizeTieredCompactionStrategy', 'max_threshold': '32', 'min_threshold': '4'}
+            AND compression = {'chunk_length_in_kb': '64', 'class': 'org.apache.cassandra.io.compress.LZ4Compressor'}
+            AND crc_check_chance = 1.0
+            AND dclocal_read_repair_chance = 0.1
+            AND default_time_to_live = 0
+            AND gc_grace_seconds = 864000
+            AND max_index_interval = 2048
+            AND memtable_flush_period_in_ms = 0
+            AND min_index_interval = 128
+            AND read_repair_chance = 0.0
+            AND speculative_retry = '99PERCENTILE';        
+        </code></pre>          
+    </div>
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h3>There are a lots of defaults in place ...</h3>
+        <ul>
+            <li>bloomfilters</li>
+            <li>memtable_flush_period</li>
+            <li>gc_grace_seconds</li>
+            <li>read_repair_chance</li>
+            <img style="height:300px; width:500px;" src="images/affinity/cassandra_storage.png" alt="Cassandra Cluster"/>
+        </ul>
+    </div>
+
+
+
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h3>Datamodelling in Cassandra: <em class="cs_highlight">thinking in queries</em></h3>
+    
+        <div class="mermaid">
+            %% Example diagram            
+            graph LR
+                l(Access) -- username --> a(user)
+                a -- username --> B(following) 
+                a -- username --> A(followers)               
+                a -- username --> D(Tweets<br>-Timeline)
+                a -- username --> C(Tweets<br>-Userline)
+                style l fill:#f9f,stroke:#333,stroke-width:4px;
+                classDef db fill:lightblue,stroke:#333,stroke-width:1px;
+                    class a,A,B,C,D db
+        </div>     
+    </div>       
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h3><em class="cs_example">Following</em> and <em class="cs_example">Followers</em></h3>
+        <pre><code class="sql">        
+        cqlsh> 
+            -- "username" follows "followed"
+            CREATE TABLE following (
+                username text,
+                followed text,
+                PRIMARY KEY(username, followed)
+            );
+            -- "username" is followed by "following"
+            CREATE TABLE followers (
+                username  text,
+                following text,
+                PRIMARY KEY(username, following)
+            );
+        </code></pre>     
+        <ul>
+            <li>in a RDBMS there would be only one table</li>
+            <li><em class="cs_warning">partition key</em> <em class="cs_example">username</em></li>
+            <li><em class="cs_warning">clustering key</em><em class="cs_example"> followed / following</em></li>
+        </ul>        
+    </div>
+
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h3><em class="cs_example">Tweets</em> and <em class="cs_example">Userline</em></h3>
+        <pre><code class="sql">        
+             CREATE TABLE tweets (
+                tweetid uuid PRIMARY KEY, 
+                username text, 
+                body text
+             );
+            CREATE TABLE userline (
+                tweetid  timeuuid,
+                username text,
+                body     text,
+                PRIMARY KEY(username, tweetid)
+            );
+        </code></pre>     
+        <ul>
+            <li>two times the same table</li>
+            <li>tweets has <em class="cs_warning">partition key</em> <em class="cs_example">tweetid</em></li>
+            <li>userline has <em class="cs_warning">partition key</em> <em class="cs_example">username</em></li>
+        </ul>        
+    </div>
+
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h3><em class="cs_example">Timeline</em></h3>
+        <pre><code class="sql">        
+            CREATE TABLE timeline (
+                username  text,
+                tweetid   timeuuid,
+                posted_by text,
+                body      text,
+                PRIMARY KEY(username, tweetid)
+            );
+        </code></pre>     
+        <ul>
+            <li>almost the same table</li>
+            <li><em class="cs_example">posted_by </em>was added</li>
+        </ul>        
+    </div>
+         <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <h3>Live Demo on a virtual machine</h3>
+        <img style="height:auto; width:800px;" src="images/copied/vm_ubuntu.png"  />
+        <ul>
+            <li>you need Java</li>
+            <li>Cassandra</li>
+            <li>ccm (Cassandra Cluster manager)</li>
+        </ul>    
+    </div>
+     
+    
+    <div class="step slide">
+        <h3>Useful Links and some companies, that use Cassandra</h3>
+        <ul>
+        <li><a href="https://www.tutorialspoint.com/cassandra">Tutorialspoint</a></li> 
+        <li><a href="https://github.com/pcmanus/ccm">CCM (Cassandra Cluster Manager)</a></li> 
+        <li><a href="http://cassandra.apache.org/">Apache Cassandra</a></li>     
+        </ul>    
+        <img style="width:500px;" src="images/copied/cassandra_users.png"  />
+    </div>   
+        
+    <div class="step slide" data-rel-x="1000" data-rel-y="0">
+        <img src="images/copied/customers.png"  
+                     class="right" style="width:300px;"/>
+                <ul>
+        <li><a href="https://www.tutorialspoint.com/cassandra">Tutorialspoint</a></li> 
+        <li><a href="https://github.com/pcmanus/ccm">CCM (Cassandra Cluster Manager)</a></li> 
+        <li><a href="http://cassandra.apache.org/">Apache Cassandra</a></li>     
+        </ul> 
+    </div>         
+      
+
+<div id="impress-toolbar"></div>
+
+<div class="impress-progressbar"><div></div></div>
+<div class="impress-progress"></div>
+
+<div id="impress-help"></div>
+
+<!-- Extra modules
+     Load highlight.js, mermaid.js and markdown.js from extras.
+     If you're curious about details, these are initialized in src/plugins/extras/extras.js -->
+<script type="text/javascript" src="extras/highlight/highlight.pack.js"></script>
+<script type="text/javascript" src="extras/mermaid/mermaid.min.js"></script>
+<script type="text/javascript" src="extras/markdown/markdown.js"></script>
+<script type="text/javascript" src="extras/impress-console/js/impressConsole.js"></script>
+<script type="text/javascript">
+  // For impressConsole, we unfortunately must also set the path to a mandatory css file
+  // which is relative to this html file.
+  // See https://github.com/regebro/impress-console/issues/19
+  var impressConsoleCss = 'extras/impress-console/css/impressConsole.css';
+</script>
+
+
+<!--
+    To make all described above really work, you need to include impress.js in the page.
+    You also need to call a `impress().init()` function to initialize impress.js presentation.
+    And you should do it in the end of your document. 
+-->
+<script type="text/javascript" src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>

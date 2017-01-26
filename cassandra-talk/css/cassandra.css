@@ -1,0 +1,29 @@
+table, th, td {
+   border:1px solid black; 
+   padding:5px;    
+}
+
+em.cs_highlight {
+    color: green;
+}
+
+em.cs_warning {
+    color: red;
+}
+
+em.cs_example {
+    color: deepskyblue;
+}
+
+img {
+    text-align: center;
+}
+
+.column .node rect {
+    fill: orange;
+}
+
+p {
+    text-align: left!important;
+}
+
