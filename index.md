@@ -8,5 +8,5 @@ In the Zurich Python User Group, January 2017:
 
 ### Cassandra
 In the Zurich Pydata group, January 2017
-- [Slides on Cassandra](cassandra-talk/python3_6.html#/1)
+- [Slides on Cassandra](cassandra-talk/cassandra.html#/1)
 
