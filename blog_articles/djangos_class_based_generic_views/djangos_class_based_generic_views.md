@@ -14,6 +14,7 @@ It shows you what is going on underneath the hood of CBGVs .
 
 ## Best screenshot
 I included the one screenshots from the tutorial, that illustrates the inheritance structure of all Class Based Generic Views and their Mixins. The only thing excluded are all the date related Views and Mixins, since even though they probably have been very useful for the inventors of Django on their news site, most people including me don’t use them very much. I put that screenshot here, since I want you to be able to come back to it without the pain of scrolling through the tutorial yet another time.
+![Djangos Class Based Generic Views](classbasedgenericviews.png)
 
 ## Sources that your urgently need when you get started with CBGVs:
 ### 1. Documentation | very urgent!
