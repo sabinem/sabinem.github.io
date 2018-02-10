@@ -7,3 +7,4 @@
 
 - [slides](../python3_6-talk/python3_6.html#/1)
 
+c
