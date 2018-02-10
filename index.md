@@ -1,61 +1,8 @@
+# Sabine Maennel
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Sabine Maennel Presentations</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,500' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Cousine' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="static/css/global.css">
-    <link rel="stylesheet" href="static/css/layout.css">
-</head>
-<body>
-<div class="bounds bounds--small">
-    <div class="grid-100">
-        <div class="header_wrapper">
-            <h1 class="logo__name text-centered">My Machine Learning</h1>
-            <h2 class="logo__text text-centered">Projects I am proud on</h2>
-        </div>
-    </div>
-</div>
-<div class="grid-100">
-    <ul class="minerals__container">
-        <li class="minerals__item python">          
-            <a class="minerals__anchor" href="MachineLearning/dog_app.html">
-                <h3>Dog App</h3>10-12-2018, Udacity Deep Learning Foundation 
-            </a>
-        </li>           
-    </ul>
-</div>       
-<div class="bounds bounds--small">
-    <div class="grid-100">
-        <div class="header_wrapper">
-            <h1 class="logo__name text-centered">My Talks</h1>
-            <h2 class="logo__text text-centered">Learning and teaching!</h2>
-        </div>
-    </div>
-</div>
-<div class="grid-100">
-    <ul class="minerals__container">
-        <li class="minerals__item python">          
-            <a class="minerals__anchor" href="python3_6-talk/python3_6.html#/1">
-                <h3>What's New in Python 3.6</h3>01-05-2017, Python User Group Zurich  
-            </a>
-        </li>    
-        <li class="minerals__item python">          
-            <a class="minerals__anchor" href="cassandra-talk/cassandra.html#/1">
-                <h3>Cassandra</h3>01-25-2017, Pydata Group Zurich  
-            </a>
-        </li>          
-    </ul>
-</div>   
-    
-  
-<div class="footer">
-    Sabine Maennel, <a href="https://github.com/sabinem">@github</a>
-</div>
-</body>
-</html>
+## My talks
+
+### What's new in Python 3.6?
+- [slides](python3_6-talk/python3_6.html#/1) 
+
+- [slides](../python3_6-talk/python3_6.html#/1)
