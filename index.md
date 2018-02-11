@@ -17,3 +17,4 @@ In the Zurich Pydata group, January 2017
 ## German Blog Articles on Building Online Courses
 I had a blog on "Onlinekurstechnik" in 2016. The target group were coaches, establishing an online brand for themselves. These articles are kept as examples for myself on how to write blog articles.
 - [Blog Articles on the Topic of Online Courses](onlinekurstechnik/)
+- [Blog Articles on the Topic of Online Courses](blog_onlinekurstechnik/index.md)
