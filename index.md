@@ -12,7 +12,7 @@ In the Zurich Pydata group, January 2017
 
 ## Blog Articles on Python
 
-- 10.06.2014: [Djangos Class Based Generic Views](blog_articles/djangos_class_based_generic_views/djangos_class_based_generic_views.md)
+- 10.06.2014: [Djangos Class Based Generic Views](blog_articles/django/class_based_generic_views/djangos_class_based_generic_views.md)
 - (blog_articles/python/generators/
 
 ## German Blog Articles on Building Online Courses
