@@ -41,3 +41,111 @@ Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 StopIteration
 ```
+
+#### When a generator stops
+- Sometimes there is no next()
+- Then the generator produces a StopIteration Error
+
+#### When Calling a generator
+- is it an unsafe operation?
+- then call it with a try-except-clause
+
+#### Code Example: calling a generator (slide 12)
+```python
+>>>def my_generator():
+           yield "How"
+           yield "are"
+           yield "you"
+           yield "today"  
+>>>x = my_generator() # x is a generator
+>>>
+while True:
+    try:
+         next(x)
+    except StopIteration:
+         print('there is no next item')
+         break 
+'How'
+'are'
+'you'
+'today'
+there is no next item
+```
+
+### 2. The difference between a generator and an iterator
+Iterators serve from a iterable
+Generator generate out of the thin air
+
+### 3. Building a generator
+
+#### Code example of an infinite generator (slide 18)
+printing multiples of a number
+```python
+>>>def my_multiples_of_3_generator(base):
+           n = 1
+           while True:
+               yield base * n
+               n += 1
+>>>y = my_multiples_of_3_generator(3)
+>>>next(y)
+6
+>>>next(y)
+3
+>>>next(y)
+9
+```
+
+#### Code Example of a finite generator (slide 20)
+printing dividers of a number
+```python
+>>>def my_divider_generator(number):
+            for n in range(1, number):
+                 remainder = number % n
+                 if remainder == 0:
+                     yield n
+>>>
+while True:
+    try:     
+         dividers.append(next(x))      
+    except StopIteration:
+         print(dividers)
+         break
+>>>dividers =[]
+>>>x = my_divider_generator(14)
+[1, 2, 7]
+```
+### 4. Looking at iterators
+#### What is an iterator? (slide 20)
+- a iterator is a generator that comes form something substantial
+- it comes from an iterable
+
+#### Python collections are iterable: (slide 21)
+- Strings: ‘Hallo how are you?’
+- Lists: [1,’a’]
+- Tuples: (1,3,4)
+- Dictionaries: {‘house’: ‘red’, ‘tree’: ‘green’}
+
+#### Collections are iterable means: (silde 23)
+- they have a method that serves the collection
+- x a collection, then iter(x) is a iterator
+
+#### Code Example: getting an iterator from an iterable (slide 26)
+```python
+>>>my_iterable = ['How', 'are', 'you', 'today']
+>>>x = iter(my_iterable) # x is a iterator
+>>>next(x)
+'you'
+>>>next(x)
+'How' 
+>>>next(x)
+'are'
+>>>next(x)
+'today'
+>>>next(x)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+StopIteration
+```
+
+
+
