@@ -17,5 +17,4 @@ that scales with ease](cassandra-talk/cassandra.html#/1)
 - 07/2016: [Understanding Generators in Python](blog_articles/python/generators/python_generators.md)
 
 ## Blog Articles on other topics
-In 2016 I had a blog "Onlinekurstechnik". The target group were coaches, establishing an online brand for themselves. These articles are kept as examples (for myself) on how to write blog articles.
-- [Onlinekurstechnik](onlinekurstechnik/)
+- 2016 [Blog "Onlinekurstechnik" with weekly articles](onlinekurstechnik/)
