@@ -6,10 +6,10 @@ This is a year long program, that takes you through 12 complete Python projects,
 
 The focus is on practical projects, that are programmed from scratch. Eventually the frontend is provided, programmed in a Javascript framenwork such as **Angular** or **React** or as pure stylesheets. The goal has been always to match the provided design of the site. In that way the focus was on programming a backend, that fits the frondend teams demands.
 
-## The Skills I got from there
+### The Skills I got from there
 What I learned: Python, Flask, Django, Django-Restframework
 
-## I finished the Programm as a Tutor
+### Tutoring upon graduating
 After graduating I continued to help out there as a contractor for 3 month, grading the very projects I had done myself. It was interesting to see all of this from the other side. But after 3 month I felt I wanted to move on.
 
 ## Showcasing My Work
