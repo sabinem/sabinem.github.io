@@ -2,11 +2,16 @@
 
 ## Deep Learning Projects
 
-## Python Projects from Treehouse Techdegree Python
+## Treehouse Techdegree Python
 ### Pure Python
 - 05/2016 [Project 1: Build a Soccer League](https://github.com/sabinem/python_techdegree_project1_soccer_league) 
 - 06/2016 [Project 2: Battleship Game](https://github.com/sabinem/python_techdegree_project2_battleshipgame)
+- 07/2016 [Project 3: Worklog filebased](https://github.com/sabinem/python_techdegree_project3_worklog)
+- 08/2016 [Project 4: Worklog with a database](https://github.com/sabinem/python_techdegree_project4_worklogdb)
+
 ### Flask
+- 10/2016 [Project 5: Learning Journal with Flask](https://github.com/sabinem/python_techdegree_project5_learning_journal)
+
 
 
 ## Slides from My Talks
