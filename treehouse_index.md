@@ -50,4 +50,6 @@ This was a datadriven project with **Django**. We builded a searchable catalog f
 ### [Project 12: Social Team Builder](https://github.com/sabinem/python_techdegree_project12_teambuilder)
 In this project the **django user model was customized**, otherwise it used **django formsets**
 
-## [Back to sabinem.github.io](index.md)
+## Back to sabinem.github.io
+Finished? You want to go back to the [homepage](index.md)?
+
