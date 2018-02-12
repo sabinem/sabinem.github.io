@@ -1,32 +1,37 @@
 ## My year at Treehouse
 I accomplished the **Python Treehouse Techdegree**.
 
-### About Treehouse Techdegree
+## About the Treehouse Techdegree Program
 This is a year long program, that takes you through 12 complete Python projects, covering the main frameworks, such as **Django** and **Flask** and state of the art skills for combining frontends with **API Backends**
 
 The focus is on practical projects, that are programmed from scratch. Eventually the frontend is provided, programmed in a Javascript framenwork such as **Angular** or **React** or as pure stylesheets. The goal has been always to match the provided design of the site. In that way the focus was on programming a backend, that fits the frondend teams demands.
 
-### The Skills I got from there
-What I learned: Python, Flask, Django, Django-Restframework
+## The Skills I got from there
+What I learned: 
+- Python: classes, list comprehension, file-i/o
+- the main python webframeworks: Flask, Django
+- building an API with Flask or Django-Restframework
+- tweaking Angular and React to work with an API Backend
+- customizing the Django User
 
-### Tutoring upon graduating
+## Tutoring upon graduating
 After graduating I continued to help out there as a contractor for 3 month, grading the very projects I had done myself. It was interesting to see all of this from the other side. But after 3 month I felt I wanted to move on.
 
 ## Showcasing My Work
 
-### Pure Python Projects
+## Pure Python Projects
 
 We started from scratch with pure Python, no frameworks:
 
-#### [Project 1: Build a Soccer League](https://github.com/sabinem/python_techdegree_project1_soccer_league) 
+### [Project 1: Build a Soccer League](https://github.com/sabinem/python_techdegree_project1_soccer_league) 
 This was a simple file-io exercise with some list comprehensions: we had to build a team rooster for soccer and mail letters to the guardians.
 
-#### [Project 2: Battleship Game](https://github.com/sabinem/python_techdegree_project2_battleshipgame)
+### [Project 2: Battleship Game](https://github.com/sabinem/python_techdegree_project2_battleshipgame)
 This was a nice exercise for designing classes. Battleships, players and board were all candidates for classes.
 
 - 07/2016 [Project 3: Worklog filebased](https://github.com/sabinem/python_techdegree_project3_worklog)
 - 08/2016 [Project 4: Worklog with a database](https://github.com/sabinem/python_techdegree_project4_worklogdb)
 
-### Flask
+## Flask Projects
 - 10/2016 [Project 5: Learning Journal with Flask](https://github.com/sabinem/python_techdegree_project5_learning_journal)
 
