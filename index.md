@@ -1,7 +1,13 @@
 # Sabine Maennel
 
-## Deep Learning Ai
+## Deep Learning 
 - 2017 [My Deep Learning Adventure with Andrew Ng](deeplearning_ai_index.md)
+
+## Machine Learning Courses
+- 2016 [mit_social_physics_index.md]
+
+## Scala Courses
+- 2016 
 
 ## Application Challenges
 - 2017 [Application Coding Challenges](application_challenges_index.md)
