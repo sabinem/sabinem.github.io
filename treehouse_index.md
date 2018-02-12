@@ -29,13 +29,19 @@ This was a simple **file-io exercise** with some list comprehensions: we had to 
 This was a nice exercise for **designing classes**. Battleships, players and board were all candidates for classes.
 
 ### [Project 3: Worklog filebased](https://github.com/sabinem/python_techdegree_project3_worklog)
-### [Project 4: Worklog with a database](https://github.com/sabinem/python_techdegree_project4_worklogdb)
+Here I build a **dialog system on the command line from scratch**. This worklog was a file based searchable worklog system.
 
-## Flask Projects
+### [Project 4: Worklog with a database](https://github.com/sabinem/python_techdegree_project4_worklogdb)
+We repeated the worklog from project 3 using a database this time and a simple **ORM: Peewee**
+
+## Pure Flask Projects
 
 ### [Project 5: Learning Journal with Flask](https://github.com/sabinem/python_techdegree_project5_learning_journal)
+Our first Project with **Flask** was a Learning Journal, that came with **tagging** and used **markddown**.
 
-### [Project 6: Learning Journal with Flask](https://github.com/sabinem/python_techdegree_project5_learning_journal)
+### [Project 6: Mineral Catalog with Django](https://github.com/sabinem/python_techdegree_project5_learning_journal)
+This was a datadriven project with **Django**. We builded a searchable catalog for data that was given as a json file.
+
 ### [Project 7: Learning Journal with Flask](https://github.com/sabinem/python_techdegree_project5_learning_journal)
 ### [Project 8: Learning Journal with Flask](https://github.com/sabinem/python_techdegree_project5_learning_journal)
 ### [Project 9: Learning Journal with Flask](https://github.com/sabinem/python_techdegree_project5_learning_journal)
