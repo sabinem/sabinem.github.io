@@ -4,7 +4,8 @@
 
 ## Python Projects
 they were done as part of the Treehouse Python Techdegree
-- [My year at Treehouse]() 
+- 05/2016 [1. Build a Soccer League](python_techdegree_project1_soccer_league/) 
+- 06/2016 [2. Battleship Game](python_techdegree_project2_battleshipgame)
 
 ## Slides from My Talks
 - 05.01.2017 [What's new in Python 3.6?](python3_6-talk/python3_6.html#/1) 
