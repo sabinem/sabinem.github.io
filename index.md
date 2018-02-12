@@ -3,6 +3,9 @@
 ## Deep Learning Projects
 
 ## Treehouse Techdegree Python
+
+- 2016/2017 [My year at Treehouse](treehouse_index.md)
+
 ### Pure Python
 - 05/2016 [Project 1: Build a Soccer League](https://github.com/sabinem/python_techdegree_project1_soccer_league) 
 - 06/2016 [Project 2: Battleship Game](https://github.com/sabinem/python_techdegree_project2_battleshipgame)
