@@ -4,7 +4,7 @@
 - 2017 [My Deep Learning Adventure with Andrew Ng](deeplearning_ai_index.md)
 
 ## Machine Learning Courses
-- 2016 [MIT Big Data and Social Analysis](https://sabinem.github.io/mit_big_data_and_social_analysis/)
+- 2016 [MIT Big Data and Social Analysis](https://sabinem.github.io/mit-big-data-and-social-analysis/)
 
 ## Scala Courses
 - 2016 
