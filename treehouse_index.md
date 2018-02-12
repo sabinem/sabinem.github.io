@@ -23,10 +23,10 @@ After graduating I continued to help out there as a contractor for 3 month, grad
 We started from scratch with pure Python, no frameworks:
 
 ### [Project 1: Build a Soccer League](https://github.com/sabinem/python_techdegree_project1_soccer_league) 
-This was a simple file-io exercise with some list comprehensions: we had to build a team rooster for soccer and mail letters to the guardians.
+This was a simple **file-io exercise** with some list comprehensions: we had to build a team rooster for soccer and mail letters to the guardians.
 
 ### [Project 2: Battleship Game](https://github.com/sabinem/python_techdegree_project2_battleshipgame)
-This was a nice exercise for designing classes. Battleships, players and board were all candidates for classes.
+This was a nice exercise for **designing classes**. Battleships, players and board were all candidates for classes.
 
 ### [Project 3: Worklog filebased](https://github.com/sabinem/python_techdegree_project3_worklog)
 ### [Project 4: Worklog with a database](https://github.com/sabinem/python_techdegree_project4_worklogdb)
@@ -35,3 +35,11 @@ This was a nice exercise for designing classes. Battleships, players and board w
 
 ### [Project 5: Learning Journal with Flask](https://github.com/sabinem/python_techdegree_project5_learning_journal)
 
+### [Project 6: Learning Journal with Flask](https://github.com/sabinem/python_techdegree_project5_learning_journal)
+### [Project 7: Learning Journal with Flask](https://github.com/sabinem/python_techdegree_project5_learning_journal)
+### [Project 8: Learning Journal with Flask](https://github.com/sabinem/python_techdegree_project5_learning_journal)
+### [Project 9: Learning Journal with Flask](https://github.com/sabinem/python_techdegree_project5_learning_journal)
+### [Project 10: Learning Journal with Flask](https://github.com/sabinem/python_techdegree_project5_learning_journal)
+### [Project 11: Learning Journal with Flask](https://github.com/sabinem/python_techdegree_project5_learning_journal)
+### [Project 12: Social Team Builder](https://github.com/sabinem/python_techdegree_project12_teambuilder)
+In this project the **django user model was customized**, otherwise it used **django formsets**
