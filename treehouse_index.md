@@ -16,7 +16,7 @@ The focus is on practical projects, that are programmed from scratch. Eventually
 ## Tutoring upon graduating
 After graduating I continued to help out there as a contractor for 3 month, grading the very projects I had done myself. It was interesting to see all of this from the other side. But after 3 month I felt I wanted to move on.
 
-## Showcasing My Work
+## Showcasing My Work:
 
 ## Pure Python Projects
 
@@ -28,9 +28,10 @@ This was a simple file-io exercise with some list comprehensions: we had to buil
 ### [Project 2: Battleship Game](https://github.com/sabinem/python_techdegree_project2_battleshipgame)
 This was a nice exercise for designing classes. Battleships, players and board were all candidates for classes.
 
-- 07/2016 [Project 3: Worklog filebased](https://github.com/sabinem/python_techdegree_project3_worklog)
-- 08/2016 [Project 4: Worklog with a database](https://github.com/sabinem/python_techdegree_project4_worklogdb)
+### [Project 3: Worklog filebased](https://github.com/sabinem/python_techdegree_project3_worklog)
+### [Project 4: Worklog with a database](https://github.com/sabinem/python_techdegree_project4_worklogdb)
 
 ## Flask Projects
-- 10/2016 [Project 5: Learning Journal with Flask](https://github.com/sabinem/python_techdegree_project5_learning_journal)
+
+### [Project 5: Learning Journal with Flask](https://github.com/sabinem/python_techdegree_project5_learning_journal)
 
