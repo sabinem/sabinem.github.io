@@ -1,10 +1,10 @@
 # Sabine Maennel
 
 ## Deep Learning Courses
-- 2017 [My Deep Learning Adventure with Andrew Ng](deeplearning_ai_index.md)
+- 2017 [My Deep Learning Adventure with Andrew Ng](coursera-deeplearning-ai)
 
 ## Machine Learning Courses
-- 2016 [MIT Big Data and Social Analysis](https://sabinem.github.io/mit-big-data-and-social-analysis/)
+- 2016 [MIT Big Data and Social Analysis](mit-big-data-and-social-analysis/)
 
 ## Scala Courses
 - 2016 
