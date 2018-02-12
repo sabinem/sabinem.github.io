@@ -44,4 +44,4 @@ This was a nice exercise for **designing classes**. Battleships, players and boa
 ### [Project 12: Social Team Builder](https://github.com/sabinem/python_techdegree_project12_teambuilder)
 In this project the **django user model was customized**, otherwise it used **django formsets**
 
-##[Back to sabinem.github.io](index.md)
+## [Back to sabinem.github.io](index.md)
