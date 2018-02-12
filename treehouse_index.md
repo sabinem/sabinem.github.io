@@ -1,4 +1,4 @@
-## My year at Treehouse
+# My year at Treehouse
 I accomplished the **Python Treehouse Techdegree**.
 
 ## About the Treehouse Techdegree Program
@@ -43,3 +43,5 @@ This was a nice exercise for **designing classes**. Battleships, players and boa
 ### [Project 11: Learning Journal with Flask](https://github.com/sabinem/python_techdegree_project5_learning_journal)
 ### [Project 12: Social Team Builder](https://github.com/sabinem/python_techdegree_project12_teambuilder)
 In this project the **django user model was customized**, otherwise it used **django formsets**
+
+##[Back to sabinem.github.io](index.md)
