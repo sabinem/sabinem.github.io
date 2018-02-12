@@ -3,6 +3,9 @@
 ## Deep Learning Ai
 - 2017 [My Deep Learning Adventure with Andrew Ng](deeplearning_ai_index.md)
 
+## Application Challenges
+- 2017 [New York TImes Data Challenge](nytimes_index.md)
+
 ## Treehouse Techdegree Python
 - 2016/2017 [My year at Treehouse](treehouse_index.md)
 
