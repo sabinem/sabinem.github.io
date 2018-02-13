@@ -2,7 +2,7 @@
 
 ## My Coursework
 - 2017 ongoing: [Udacity Deep Learning Nanodegree](udacity_dl)
-- 2017 ongoing: [My Deep Learning Adventure with Andrew Ng](coursera-deeplearning-ai)
+- 2017 ongoing: [My Deep Learning Adventure with Andrew Ng](coursera-deeplearning-specialization)
 - 2016/2017 [MIT Big Data and Social Analysis](mit-big-data-and-social-analysis/)
 - 2016/2017 [My year at Treehouse](treehouse_index.md)
 - 2016 [Functional Programming with Scala]()
