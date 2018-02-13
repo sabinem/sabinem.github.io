@@ -1,7 +1,7 @@
 # Sabine Maennel
 
 ## My Coursework
-- 2017 ongoing: [Udacity Deep Learning Nanodegree](udacity_dl)
+- 2017 ongoing: [Udacity Deep Learning Nanodegree Foundation](udacity-deeplearning-nanodegree-foundation/)
 - 2017 ongoing: [Coursera Deep Learning Specialization](coursera-deeplearning-specialization)
 - 2016/2017 [MIT Big Data and Social Analysis](mit-big-data-and-social-analysis/)
 - 2016/2017 [My year at Treehouse](treehouse_index.md)
