@@ -4,15 +4,11 @@
 - 2017 ongoing: [Udacity Deep Learning Nanodegree](udacity_dl)
 - 2017 ongoing: [My Deep Learning Adventure with Andrew Ng](coursera-deeplearning-ai)
 - 2016/2017 [MIT Big Data and Social Analysis](mit-big-data-and-social-analysis/)
-
-## Scala Courses
+- 2016/2017 [My year at Treehouse](treehouse_index.md)
 - 2016 [Functional Programming with Scala]()
 
 ## Application Challenges
 - 2017 [Application Coding Challenges](application_challenges_index.md)
-
-## Treehouse Techdegree Python
-- 2016/2017 [My year at Treehouse](treehouse_index.md)
 
 ## Slides from My Talks
 - 01/2017 [What's new in Python 3.6?](python3_6-talk/python3_6.html#/1) 
