@@ -1,13 +1,12 @@
 # Sabine Maennel
 
-## Deep Learning Courses
-- 2017 [My Deep Learning Adventure with Andrew Ng](coursera-deeplearning-ai)
-
-## Machine Learning Courses
-- 2016 [MIT Big Data and Social Analysis](mit-big-data-and-social-analysis/)
+## My Coursework
+- 2017 ongoing: [Udacity Deep Learning Nanodegree](udacity_dl)
+- 2017 ongoing: [My Deep Learning Adventure with Andrew Ng](coursera-deeplearning-ai)
+- 2016/2017 [MIT Big Data and Social Analysis](mit-big-data-and-social-analysis/)
 
 ## Scala Courses
-- 2016 
+- 2016 [Functional Programming with Scala]()
 
 ## Application Challenges
 - 2017 [Application Coding Challenges](application_challenges_index.md)
