@@ -20,4 +20,4 @@ that scales with ease](cassandra-talk/cassandra.html#/1)
 - 2014: [Articles on Python](python-articles)
 
 ## Blog Articles on other topics
-- 2016 [Blog "Onlinekurstechnik" with weekly articles](onlinekurstechnik/)
+- 2016 [Blog "Onlinekurstechnik" with weekly articles](onlinekurstechnik)
