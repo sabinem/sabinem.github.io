@@ -8,7 +8,7 @@
 - 2016 [Functional Programming with Scala]()
 
 ## Application Challenges
-- 2017 [Code Challenges](coding-challenges)
+- 2017 [Code Challenges](code-challenges)
 
 ## Slides from My Talks
 - 01/2017 [What's new in Python 3.6?](python3_6-talk/python3_6.html#/1) 
