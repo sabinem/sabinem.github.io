@@ -17,8 +17,7 @@ An eventually consistent database,
 that scales with ease](cassandra-talk/cassandra.html#/1)
 
 ## Blog Articles on Python
-- 06/2014: [Djangos Class Based Generic Views](blog_articles/python/djangos_class_based_generic_views/djangos_class_based_generic_views.md)
-- 07/2016: [Understanding Generators in Python](blog_articles/python/generators/python_generators.md)
+- 2014: [Articles on Python](python-articles)
 
 ## Blog Articles on other topics
 - 2016 [Blog "Onlinekurstechnik" with weekly articles](onlinekurstechnik/)
