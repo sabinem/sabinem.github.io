@@ -1,8 +1,9 @@
 ---
 ---
-
+// import site theme
 @import "{{ site.theme }}";
 
+// style header 
 header {
     background: #62b3b2;
 }
@@ -12,6 +13,7 @@ header p, header h1 {
     color: white;
 }
 
+// style banner and github button
 #banner {
     background: #add4e7;
     background: #689aca;
@@ -28,6 +30,7 @@ header p, header h1 {
     color: #f89867   
 }
 
+// style body 
 body {
     background: #689aca;
     //font-family: 'Inconsolata', ;
@@ -42,6 +45,8 @@ body {
 nav ul li.tag-h2 a, nav ul.li.tag-h2.active a {
     color: white
 }
+
+// style navigation links in the sidebar
 
 nav ul li.tag-h1 a, nav ul.li.tag-h1.active a {
     color:white
