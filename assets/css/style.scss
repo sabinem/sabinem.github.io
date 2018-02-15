@@ -8,7 +8,9 @@ header {
     background: #62b3b2;
 }
 header p, header h1 {
+    font-family: 'Open Sans', sans-serif;  
     color: white;
+    
 }
 
 // style banner and github button
@@ -28,12 +30,6 @@ header p, header h1 {
 // style body 
 body {
     background: #689aca;
-    //font-family: 'Inconsolata', ;
-    //color: $iron;
-    //background-color: $dorian;
-    font-family: "Quicksand", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-    font-family: 'proxima-nova',sans-serif;
     font-family: 'Open Sans', sans-serif;    
 }
 
