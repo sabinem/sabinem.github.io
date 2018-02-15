@@ -5,7 +5,6 @@
 - 2017 ongoing: [Coursera Deep Learning Specialization](coursera-deeplearning)
 - 2016/2017 [MIT Big Data and Social Analysis](mit-big-data-and-social-analysis)
 - 2016/2017 [Treehouse Python Techdegree](treehouse-python-techdegree)
-- 2016 [Functional Programming with Scala]()
 
 ## Application Challenges
 - 2017 [Code Challenges](code-challenges)
