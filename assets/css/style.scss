@@ -20,6 +20,7 @@ header p, header h1 {
 }
 #banner .fork, #banner a.button.fork:hover, #banner a.button.fork {
     background: #f89867;
+    background: #f4bf75;
     color: white;
     border: none;
 }
@@ -39,4 +40,5 @@ nav ul li.tag-h1 a, nav ul li.tag-h2 a {
 }
 nav ul li.tag-h1.active a, nav ul li.tag-h2.active a {
     color: #f89867;
+    color: #f4bf75;
 }
