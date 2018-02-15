@@ -15,19 +15,18 @@ header p, header h1 {
 
 // style banner and github button
 #banner {
-    background: #add4e7;
     background: #689aca;
     border: none;
 }
 
 #banner .fork, #banner a.button.fork:hover, #banner a.button.fork {
-    background: #f7915d;
     background: #62b3b2;
+    background: #f89867;
     color: white;
     border: none;
 }
 #banner a.button.fork strong {
-    color: #f89867   
+    color: white;   
 }
 
 // style body 
