@@ -1,5 +1,5 @@
 # My Coursework
-## About
+
 I try to collect the material from the courses I study in. It helps me later to revisit the content for my own work.
 
 ## Deep Learning
