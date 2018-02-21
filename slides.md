@@ -4,7 +4,7 @@
 ### - fstrings, numeric literals, secrets, pathlib, asyncio, annotations, new dict implementation, new class creation
 (01.2017)
 
-I gave that talk in the Zurich Python User group just after 3.6 came out in December 2016
+I volunteered to explore and talk about Python 3.6, just after it came out in December 2016, for my local Python User Group.
 - [the slides](python3_6-talk/python3_6.html#/1) 
 
 ## Apache Cassandra 
