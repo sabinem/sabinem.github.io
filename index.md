@@ -13,5 +13,5 @@ Today I am into **Machine Learning** and **Deep Learning**.
 
 **Python** is my most native programming language. **Scala** is one of my favorite programming languages.
 
-## From my Past
-- [Work from my past](past_work.md)
+## Past Work Experiences
+- [Past Work Experiences](past_work.md)
