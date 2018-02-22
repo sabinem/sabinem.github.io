@@ -26,7 +26,7 @@ After the startup I kept for a while **a blog helping coaches to start up their 
 
 (2016 - 2017)
 
-A student at the local "Fachhochschule" found me via Xing and I was teaching him on demand, about big data, PHP, Javascript, XML, CSS, Apache Pig, Cassandra and more. That way I got exposure to a lot of interesting topics. But teaching on demand is not a very efficient way of teaching. You are often only slightly ahead of the student with your own learning of the subjects. After the student took a break, I stopped this kind of teaching.
+A student at the local "Fachhochschule" found me via Xing and I was teaching him on demand, about **big data, PHP, Javascript, XML, CSS, Apache Pig, Cassandra** and more. That way I got exposure to a lot of interesting topics. But teaching on demand is not a very efficient way of teaching. You are often only slightly ahead of the student with your own learning of the subjects. After the student took a break, I stopped this kind of teaching.
 
 ## Application Challenges
 
