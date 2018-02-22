@@ -4,7 +4,7 @@
 Almost all my work is stored on Github these days:
 - [My Python Articles](python-articles)
 - [Slides from my talks](slides.md)
-- [Work from the courses that I take](coursework.md)
+- [Work from the classes that I take](coursework.md)
 
 ## About me
 **Math** is were I come form. I graduated in math at the University of Hamburg. 
