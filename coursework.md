@@ -1,13 +1,13 @@
 # My Coursework
 
-I try to collect the material from the courses I study in. It helps me later to revisit the content for my own work.
+Here I collect the material from the courses I study in. It helps me later to revisit the content for my own work.
 
 ## Deep Learning
 
 (2017/2018)
 
-I discovered Deep Learning in 2017 and feel like this is the future of Machine Learning. I did two courses on this: 
-The Coursera Course from Andrew Ng, one of the pioneers in Machine Learning. In paralell I persued the Deep Learning Nanodegree at Udacity. I would say that these two courses are orthogonal to each other. Andrew Ng does a very good job on teaching you everything from scratch, while at Udacity you get kind of the birds eye view whats going on in that area of study overall.
+In 2017 I discovered Deep Learning and feel like it this is the future of Machine Learning. I am doing two courses on this: 
+The Coursera Course from Andrew Ng, one of the pioneers in Machine Learning. In paralell I persue the Deep Learning Nanodegree at Udacity. I would say that these two courses are orthogonal to each other. Andrew Ng does a very good job on teaching you everything from scratch, while at Udacity you get kind of the birds eye view whats going on in that area of study overall.
 
 - [Udacity Deep Learning Nanodegree Foundation](udacity-deeplearning)
 - [Coursera Deep Learning Specialization](coursera-deeplearning)
