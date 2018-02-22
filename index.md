@@ -1,13 +1,13 @@
 # Sabine Maennel
 
 ## What you can find here
-I store almost all my work on Github these days. You can find here
+Almost all my work is stored on Github these days:
 - [My Python Articles](python-articles)
 - [Slides from my talks](slides.md)
 - [Work from the courses that I take](coursework.md)
 
 ## About me
-I studied math, I am into python, machine learning and deep learning, I am moved by scala, but stick to python for now. I like teaching and learning, I especially like combining those two.
+Math is were I come form. I graduated in math at the University of Hamburg. Today I am into Machine Learning and Deep Learning. Python is my most native programming language. Scala is one of my favorite programming languages.
 
 ## From my Past
 - [Work from my past](past_work.md)
