@@ -1,9 +1,8 @@
 ## Current Projects
 
 Two projects are currently on my list:
-- getting into Open Source, see: [Documentation of fish](#documentation-of-fish)
-- improving my people skills, see: [NLP Practioner](#nlp-practioner)
-
+- getting into Open Source, see: Documentation of fish
+- improving my people skills, see: NLP Practioner
 
 ## Documentation of Fish
 My goal currently is to get seriously into Open Source contribution. 
