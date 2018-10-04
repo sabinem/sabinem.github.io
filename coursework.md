@@ -17,7 +17,7 @@ The Coursera Course from Andrew Ng, one of the pioneers in Machine Learning. In 
 (2016/2017)
 
 This was what got me first hooked to Machine Learning: How data can be used for predictions about people, their well being, how it can also be abused. This course was a lot about the role data tends to play more and more in our daily lifes.
-- [MIT Big Data and Social Analysis](mit-big-data-and-social-analysis)
+- MIT Big Data and Social Analysis
 
 ## Python
 
